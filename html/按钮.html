@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+</head>
+<body>
+<div class="container">
+    <h2>按钮样式</h2>
+    <!--按钮尺寸 btn-lg-->
+    <button type="button" class="btn">基本按钮</button>
+    <button type="button" class="btn btn-sm">小按钮</button>
+    <button type="button" class="btn btn-lg">大按钮</button>
+    <button type="button" class="btn btn-block">拉伸按钮</button>
+    <button type="button" class="btn btn-primary">主要按钮</button>
+    <button type="button" class="btn btn-secondary">次要按钮</button>
+    <button type="button" class="btn btn-success">成功</button>
+    <button type="button" class="btn btn-info">信息</button>
+    <button type="button" class="btn btn-warning">警告</button>
+    <button type="button" class="btn btn-danger">危险</button>
+    <button type="button" class="btn btn-dark">黑色</button>
+    <button type="button" class="btn btn-light">浅色</button>
+    <button type="button" class="btn btn-link">链接</button>
+<!--
+.active 类可以设置按钮是可用的， disabled 属性可以设置按钮是不可点击的。
+注意 <a> 元素不支持 disabled 属性，你可以通过添加 .disabled 类来禁止链接的点击
+-->
+    <button type="button" class="btn btn-primary active">点击后的按钮</button>
+    <button type="button" class="btn btn-primary" disabled>禁止点击的按钮</button>
+    <a href="#" class="btn btn-primary disabled">禁止点击的链接</a>
+
+</div>
+</body>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+</html>

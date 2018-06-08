@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>列偏移</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+</head>
+<body>
+<!--
+偏移列通过 offset-*-* 类来设置。第一个星号( * )可以是 sm、md、lg、xl，表示屏幕设备类型，第二个星号( * )可以是 1 到 11 的数字。
+为了在大屏幕显示器上使用偏移，请使用 .offset-md-* 类。这些类会把一个列的左外边距（margin）增加 * 列，其中 * 范围是从 1 到 11。
+例如：.offset-md-4 是把.col-md-4 往右移了四列格。
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>区域一</h1>
+        </div>
+        <div class="col-xs-4">
+            <h1>区域二</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h1>区域一</h1>
+        </div>
+        <div class="offset-md-2 col-xs-4">
+            <h1>区域二</h1>
+            <p>偏移2</p>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+</html>

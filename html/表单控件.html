@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>表单控件</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+</head>
+<body>
+<div class="container">
+    <form>
+        <h2>Input</h2>
+        <div class="form-group">
+            <label for="usr">text:</label>
+            <input type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group">
+            <label for="pwd">password:</label>
+            <input type="password" class="form-control" id="pwd">
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <h2>Textarea</h2>
+    <form>
+        <div class="form-group">
+            <label for="comment">textarea:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <h2>Checkbox</h2>
+    <form>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Option 1
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Option 2
+            </label>
+        </div>
+        <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="" disabled>Option 3
+            </label>
+        </div>
+    </form>
+</div>
+
+
+<div class="container">
+    <h2>使用 .form-check-inline 类可以让选项显示在同一行上：</h2>
+    <form>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Option 1
+            </label>
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="">Option 2
+            </label>
+        </div>
+        <div class="form-check form-check-inline disabled">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="" disabled>Option 3
+            </label>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <h2>Radio</h2>
+    <form>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Option 1</label>
+        </div>
+        <div class="radio">
+            <label><input type="radio" name="optradio">Option 2</label>
+        </div>
+        <div class="radio disabled">
+            <label><input type="radio" name="optradio" disabled>Option 3</label>
+        </div>
+        <h2>使用 .radio-inline 类可以让选项显示在同一行上：</h2>
+        <label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
+        <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+        <label class="radio-inline"><input type="radio" name="optradio" disabled>Option 3</label>
+    </form>
+</div>
+
+
+<div class="container">
+    <h2>Select</h2>
+    <form>
+        <div class="form-group">
+            <label for="sel1">单选下拉菜单:</label>
+            <select class="form-control" id="sel1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <br>
+            <label for="sel2">多选下拉菜单(按住 shift 键，可以选取多个选项):</label>
+            <select multiple class="form-control" id="sel2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+    </form>
+</div>
+
+
+</body>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+</html>

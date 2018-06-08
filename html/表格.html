@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>表格</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+    <style>
+        .table-striped > tbody > tr:nth-of-type(odd) {
+            background-color: #9fcdff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--
+    table
+    table-striped ：条纹状表格
+    table-bordered ：表格边框
+    table-hover:表格悬停
+    -->
+
+    <!--
+    通过这些状态类可以为行或单元格设置颜色
+    .active 	鼠标悬停在行或单元格上时所设置的颜色
+    .success 	标识成功或积极的动作
+    .info 	标识普通的提示信息或动作
+    .warning 	标识警告或需要用户注意
+    .danger 	标识危险或潜在的带来负面影响的动作
+    -->
+    <!--
+    将任何 .table 元素包裹在 .table-responsive 元素内，即可创建响应式表格，
+    其会在小屏幕设备上（小于768px）水平滚动。
+    当屏幕大于 768px 宽度时，水平滚动条消失。
+    -->
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+            <tr>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>年龄</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-info">
+                <td class="table-success">姓名1</td>
+                <td>性别</td>
+                <td>年龄1</td>
+            </tr>
+            <tr class="table-active">
+                <td>姓名2</td>
+                <td>性别2</td>
+                <td>年龄2</td>
+            </tr>
+            <tr>
+                <td>姓名3</td>
+                <td>性别3</td>
+                <td>年龄3</td>
+            </tr>
+            <tr>
+                <td>姓名4</td>
+                <td>性别4</td>
+                <td>年龄4</td>
+            </tr>
+            <tr>
+                <td>姓名5</td>
+                <td>性别5</td>
+                <td>年龄5</td>
+            </tr>
+            <tr>
+                <td>姓名6</td>
+                <td>性别6</td>
+                <td>年龄6</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/bootstrap.js"></script>
+</html>
